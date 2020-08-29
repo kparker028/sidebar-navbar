@@ -2,6 +2,7 @@ import React from "react";
 import "./navbar.css";
 
 export const Navbar = ({children}) => {
+    return(
     <div className="navContainer">
         <div className="navNavigation">
             <ol>
@@ -15,4 +16,6 @@ export const Navbar = ({children}) => {
     
     
     </div>
+    );
 }
+    

@@ -6,10 +6,10 @@ export const Navbar = ({children}) => {
     <div className="navContainer">
         <div className="navNavigation">
             <ol>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#"></a>About Us</li>
-                <li><a href="#"></a>Contact Us</li>
+                <button>Home</button>
+                <button>Services</button>
+                <button>About Us</button>
+                <button>Contact Us</button>
             </ol>
         
         </div>

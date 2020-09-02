@@ -31,7 +31,7 @@ function Navbar() {
                             <span>{item.title}</span>
                         </link>
                     </li>
-                )
+                );
             })}
         </ul>
     </nav>

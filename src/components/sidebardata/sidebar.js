@@ -13,20 +13,21 @@ export const SidebarData = [
     },
     {
         title: 'Contact Us',
-        path: '/',
-        icons: <AiIcons.AiFillHome />,
+        path: 'Contact Us',
+        icons: <AiIcons.AiOutlinePhone />,
         cName: 'nav-text'
     },
     {
         title: 'About',
-        path: '/',
-        icons: <AiIcons.AiFillHome />,
+        path: 'About',
+        icons: <AiIcons.AiOutlineQuestionCircle />,
         cName: 'nav-text'
-    },
+    }, 
     {
         title: 'Services',
-        path: '/',
-        icons: <AiIcons.AiFillHome />,
+        path: 'Servies',
+        icons: <AiIcons.AiOutlineScissor />,
         cName: 'nav-text'
     },
 ]
+

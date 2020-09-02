@@ -3,8 +3,9 @@ import "./navbar.css";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import { Link } from "react-router-dom";
+import {SidebarData} from "./sidebardata";
 
-export const Navbar = ({}) => {
+function Navbar() {
     const [ sidebar, setSidebar ] = useState(false);
 
     const showSidebar = () => setSidebar(!sidebar);
@@ -22,6 +23,16 @@ export const Navbar = ({}) => {
                     <AiIcons.AiOutlineClose />
                 </link>
             </li>
+            {SidebarData.map((item,index)=>{
+                return(
+                    <li key={index} className={item.cName}>
+                        <link to={item.path}>
+                            {item.icon}
+                            <span>{item.title}</span>
+                        </link>
+                    </li>
+                )
+            })}
         </ul>
     </nav>
 

@@ -5,17 +5,17 @@ import * as AiIcons from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { SidebarData } from "./sidebardata";
 
-function Navbar() {
+export const Navbar = ({sidebar, setSidebar}) => {
     const [ sidebar, setSidebar ] = useState(false);
 
     const showSidebar = () => setSidebar(!sidebar);
     return(
-        
+        <>
+        <Navbar>
         <div className="navbar">
             <Link to="#" className="menu-bars">
                 <FaIcons.FaBars onClick={showSidebar} />
             </Link>
-    
         </div>
         <nav className={ sidebar ? "nav-menu active" : "nav-menu"}>
             <ul className="nav-menu-items">
@@ -36,7 +36,7 @@ function Navbar() {
                 })}
             </ul>
         </nav>
-              
+          </Navbar>    
+          </>
     );
 }
-export default Navbar;

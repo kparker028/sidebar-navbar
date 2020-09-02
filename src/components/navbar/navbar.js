@@ -3,15 +3,15 @@ import "./navbar.css";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import { Link } from "react-router-dom";
-import { SidebarData } from "./sidebardata";
+import { SidebarData } from "./sidebardata/sidebar";
 
-export const Navbar = ({sidebar, setSidebar}) => {
+function Navbar() {
     const [ sidebar, setSidebar ] = useState(false);
 
     const showSidebar = () => setSidebar(!sidebar);
     return(
         <>
-        <Navbar>
+        
         <div className="navbar">
             <Link to="#" className="menu-bars">
                 <FaIcons.FaBars onClick={showSidebar} />
@@ -36,7 +36,8 @@ export const Navbar = ({sidebar, setSidebar}) => {
                 })}
             </ul>
         </nav>
-          </Navbar>    
+            
           </>
     );
 }
+export default Navbar;
